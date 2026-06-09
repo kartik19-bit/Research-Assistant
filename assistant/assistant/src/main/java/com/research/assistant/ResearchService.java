@@ -19,6 +19,7 @@ public class ResearchService {
        private final WebClient webClient;
        private final ObjectMapper objectMapper;
 
+       @Autowired
        public ResearchService(WebClient.Builder webClientBuilder, ObjectMapper objectMapper){
               this.webClient = webClientBuilder.build();
               this.objectMapper = objectMapper;
